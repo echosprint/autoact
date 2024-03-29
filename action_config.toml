@@ -1,0 +1,567 @@
+execute_action = true
+wait_before_detect_cursor = 4_000
+
+# --------------- MAIL 1  ACTION BEGIN ---------------
+
+# move the initial position, specified in Command line para -x -y
+[[action]]
+type = "MOVEINIT"
+
+[[action]]
+type = "LEFTCLICK"
+wait = 500
+
+# move the mail content area
+[[action]]
+type = "MOVECLICK"
+x = 2000
+y = 600
+
+# pop up the menu list
+[[action]]
+type = "RIGHTCLICK"
+wait = 500
+
+# select the edit mail option
+[[action]]
+type = "MOVECLICK"
+x = 2060
+y = 760
+wait = 2_000
+
+# change the date in title
+[[action]]
+type = "MOVECLICK"
+x = 610
+y = 220
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 8
+wait = 500
+
+[[action]]
+type = "DATE"
+wait = 500
+
+# change the date in content
+[[action]]
+type = "MOVECLICK"
+x = 860
+y = 520
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 8
+wait = 500
+
+[[action]]
+type = "DATE"
+wait = 500
+
+# delete the file name in content
+[[action]]
+type = "MOVECLICK"
+x = 1030
+y = 630
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 1
+wait = 500
+
+# delete the file attachment
+[[action]]
+type = "MOVECLICK"
+x = 400
+y = 260
+wait = 300
+
+[[action]]
+type = "DELETE"
+wait = 500
+
+# move cursor the where the added attachment sit
+[[action]]
+type = "MOVECLICK"
+x = 1050
+y = 650
+wait = 100
+
+# click the add attachment button
+[[action]]
+type = "MOVECLICK"
+x = 240
+y = 40 
+wait = 2_000
+
+# modify the selected folder
+[[action]]
+type = "MOVECLICK"
+x = 820 
+y = 50 
+wait = 300
+
+[[action]]
+type = "BACKSPACE"
+number = 25 
+wait = 500
+
+[[action]]
+type = "INPUT"
+content = 'D:\工作\临时事务统计'
+
+# enter into the folder
+[[action]]
+type = "ENTER"
+wait = 800
+
+# select the file
+[[action]]
+type = "MOVECLICK"
+x = 530 
+y = 180
+wait = 1_000
+
+# add attachment
+[[action]]
+type = "DOUBLECLICK"
+wait = 1_000
+
+# wait before send
+[[action]]
+type = "WAIT"
+wait = 6_000
+
+[[action]]
+type = "MOVECLICK"
+x = 40 
+y = 40
+wait = 10_000
+
+# --------------- MAIL 2  ACTION BEGIN ---------------
+
+# move the initial position, specified in Command line para -x -y
+[[action]]
+type = "MOVEINIT"
+
+[[action]]
+type = "LEFTCLICK"
+wait = 500
+
+# move the mail content area
+[[action]]
+type = "MOVECLICK"
+x = 2000
+y = 600
+
+# pop up the menu list
+[[action]]
+type = "RIGHTCLICK"
+wait = 500
+
+# select the edit mail option
+[[action]]
+type = "MOVECLICK"
+x = 2060
+y = 760
+wait = 2_000
+
+# change the date in title
+[[action]]
+type = "MOVECLICK"
+x = 560
+y = 220
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 8
+wait = 500
+
+[[action]]
+type = "DATE"
+wait = 500
+
+# change the date in content
+[[action]]
+type = "MOVECLICK"
+x = 780
+y = 520
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 8
+wait = 500
+
+[[action]]
+type = "DATE"
+wait = 500
+
+# delete the file name in content
+[[action]]
+type = "MOVECLICK"
+x = 1030
+y = 630
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 1
+wait = 500
+
+# delete the file attachment
+[[action]]
+type = "MOVECLICK"
+x = 400
+y = 260
+wait = 300
+
+[[action]]
+type = "DELETE"
+wait = 500
+
+# move cursor the where the added attachment sit
+[[action]]
+type = "MOVECLICK"
+x = 1050
+y = 650
+wait = 100
+
+# click the add attachment button
+[[action]]
+type = "MOVECLICK"
+x = 240
+y = 40 
+wait = 2_000
+
+# modify the selected folder
+[[action]]
+type = "MOVECLICK"
+x = 820 
+y = 50 
+wait = 300
+
+[[action]]
+type = "BACKSPACE"
+number = 25 
+wait = 500
+
+[[action]]
+type = "INPUT"
+content = 'D:\工作\临时事务统计'
+
+# enter into the folder
+[[action]]
+type = "ENTER"
+wait = 800
+
+# select the file
+[[action]]
+type = "MOVECLICK"
+x = 530 
+y = 160
+wait = 1_000
+
+# add attachment
+[[action]]
+type = "DOUBLECLICK"
+wait = 1_000
+
+# wait before send
+[[action]]
+type = "WAIT"
+wait = 6_000
+
+[[action]]
+type = "MOVECLICK"
+x = 40 
+y = 40
+wait = 10_000
+
+# --------------- MAIL 3  ACTION BEGIN ---------------
+
+# move the initial position, specified in Command line para -x -y
+[[action]]
+type = "MOVEINIT"
+
+[[action]]
+type = "LEFTCLICK"
+wait = 500
+
+# move the mail content area
+[[action]]
+type = "MOVECLICK"
+x = 2000
+y = 600
+
+# pop up the menu list
+[[action]]
+type = "RIGHTCLICK"
+wait = 500
+
+# select the edit mail option
+[[action]]
+type = "MOVECLICK"
+x = 2060
+y = 760
+wait = 2_000
+
+# change the date in title
+[[action]]
+type = "MOVECLICK"
+x = 450
+y = 220
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 8
+wait = 500
+
+[[action]]
+type = "DATE"
+wait = 500
+
+# change the date in content
+[[action]]
+type = "MOVECLICK"
+x = 640
+y = 500
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 8
+wait = 500
+
+[[action]]
+type = "DATE"
+wait = 500
+
+# delete the file name in content
+[[action]]
+type = "MOVECLICK"
+x = 990
+y = 520
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 1
+wait = 500
+
+# delete the file attachment
+[[action]]
+type = "MOVECLICK"
+x = 400
+y = 260
+wait = 300
+
+[[action]]
+type = "DELETE"
+wait = 500
+
+# move cursor the where the added attachment sit
+[[action]]
+type = "MOVECLICK"
+x = 1050
+y = 650
+wait = 100
+
+# click the add attachment button
+[[action]]
+type = "MOVECLICK"
+x = 240
+y = 40 
+wait = 2_000
+
+# modify the selected folder
+[[action]]
+type = "MOVECLICK"
+x = 820 
+y = 50 
+wait = 300
+
+[[action]]
+type = "BACKSPACE"
+number = 25 
+wait = 500
+
+[[action]]
+type = "INPUT"
+content = 'D:\工作\临时事务统计'
+
+# enter into the folder
+[[action]]
+type = "ENTER"
+wait = 800
+
+# select the file
+[[action]]
+type = "MOVECLICK"
+x = 530 
+y = 140
+wait = 1_000
+
+# add attachment
+[[action]]
+type = "DOUBLECLICK"
+wait = 1_000
+
+# wait before send
+[[action]]
+type = "WAIT"
+wait = 6_000
+
+[[action]]
+type = "MOVECLICK"
+x = 40 
+y = 40
+wait = 10_000
+
+# --------------- MAIL 4  ACTION BEGIN ---------------
+
+# move the initial position, specified in Command line para -x -y
+[[action]]
+type = "MOVEINIT"
+
+[[action]]
+type = "LEFTCLICK"
+wait = 500
+
+# move the mail content area
+[[action]]
+type = "MOVECLICK"
+x = 2000
+y = 600
+
+# pop up the menu list
+[[action]]
+type = "RIGHTCLICK"
+wait = 500
+
+# select the edit mail option
+[[action]]
+type = "MOVECLICK"
+x = 2060
+y = 760
+wait = 2_000
+
+# change the date in title
+[[action]]
+type = "MOVECLICK"
+x = 470
+y = 210
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 8
+wait = 500
+
+[[action]]
+type = "DATE"
+wait = 500
+
+# change the date in content
+[[action]]
+type = "MOVECLICK"
+x = 655
+y = 455
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 8
+wait = 500
+
+[[action]]
+type = "DATE"
+wait = 500
+
+# wait before send
+[[action]]
+type = "WAIT"
+wait = 6_000
+
+[[action]]
+type = "MOVECLICK"
+x = 40 
+y = 40
+wait = 10_000
+
+# --------------- MAIL 5  ACTION BEGIN ---------------
+
+# move the initial position, specified in Command line para -x -y
+[[action]]
+type = "MOVEINIT"
+
+[[action]]
+type = "LEFTCLICK"
+wait = 500
+
+# move the mail content area
+[[action]]
+type = "MOVECLICK"
+x = 2000
+y = 600
+
+# pop up the menu list
+[[action]]
+type = "RIGHTCLICK"
+wait = 500
+
+# select the edit mail option
+[[action]]
+type = "MOVECLICK"
+x = 2060
+y = 760
+wait = 2_000
+
+# change the date in title
+[[action]]
+type = "MOVECLICK"
+x = 470
+y = 210
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 8
+wait = 500
+
+[[action]]
+type = "DATE"
+wait = 500
+
+# change the date in content
+[[action]]
+type = "MOVECLICK"
+x = 655
+y = 420
+wait = 500
+
+[[action]]
+type = "BACKSPACE"
+number = 8
+wait = 500
+
+[[action]]
+type = "DATE"
+wait = 500
+
+# wait before send
+[[action]]
+type = "WAIT"
+wait = 6_000
+
+[[action]]
+type = "MOVECLICK"
+x = 40 
+y = 40
+wait = 10_000

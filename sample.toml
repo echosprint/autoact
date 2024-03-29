@@ -1,0 +1,50 @@
+execute_action = true
+wait_before_detect_cursor = 6_000
+
+[[action]]
+type = "MOVEINIT"
+
+[[action]]
+type = "MOVE"
+x = 100
+y = 100
+
+[[action]]
+type = "MOVERELATIVE"
+x = 100
+y = 100
+
+[[action]]
+type = "LEFTCLICK"
+wait = 1_000
+
+[[action]]
+type = "DOUBLECLICK"
+wait = 1_000
+
+[[action]]
+type = "RIGHTCLICK"
+wait = 2_000
+
+[[action]]
+type = "WAIT"
+wait = 5_000
+
+[[action]]
+type = "BACKSPACE"
+number = 8
+wait = 300
+
+[[action]]
+type = "DELETE"
+wait = 100
+
+[[action]]
+type = "INPUT"
+content = "Hello world"
+
+[[action]]
+type = "DATE"
+
+[[action]]
+type = "ENTER"

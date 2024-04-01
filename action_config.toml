@@ -31,34 +31,18 @@ wait = 2_000
 
 # change the date in title
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 610
 y = 220
-wait = 500
-
-[[action]]
-type = "BACKSPACE"
-number = 8
-wait = 500
-
-[[action]]
-type = "DATE"
+content = "${DATE}"
 wait = 500
 
 # change the date in content
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 860
 y = 520
-wait = 500
-
-[[action]]
-type = "BACKSPACE"
-number = 8
-wait = 500
-
-[[action]]
-type = "DATE"
+content = "${DATE}"
 wait = 500
 
 # delete the file name in content
@@ -100,18 +84,10 @@ wait = 2_000
 
 # modify the selected folder
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 820 
 y = 50 
-wait = 300
-
-[[action]]
-type = "BACKSPACE"
-number = 25 
-wait = 500
-
-[[action]]
-type = "INPUT"
+delnum = 25
 content = 'D:\工作\临时事务统计'
 
 # enter into the folder
@@ -172,34 +148,18 @@ wait = 2_000
 
 # change the date in title
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 560
 y = 220
-wait = 500
-
-[[action]]
-type = "BACKSPACE"
-number = 8
-wait = 500
-
-[[action]]
-type = "DATE"
+content = "${DATE}"
 wait = 500
 
 # change the date in content
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 780
 y = 520
-wait = 500
-
-[[action]]
-type = "BACKSPACE"
-number = 8
-wait = 500
-
-[[action]]
-type = "DATE"
+content = "${DATE}"
 wait = 500
 
 # delete the file name in content
@@ -241,18 +201,10 @@ wait = 2_000
 
 # modify the selected folder
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 820 
 y = 50 
-wait = 300
-
-[[action]]
-type = "BACKSPACE"
-number = 25 
-wait = 500
-
-[[action]]
-type = "INPUT"
+delnum = 25
 content = 'D:\工作\临时事务统计'
 
 # enter into the folder
@@ -313,34 +265,18 @@ wait = 2_000
 
 # change the date in title
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 450
 y = 220
-wait = 500
-
-[[action]]
-type = "BACKSPACE"
-number = 8
-wait = 500
-
-[[action]]
-type = "DATE"
+content = "${DATE}"
 wait = 500
 
 # change the date in content
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 640
 y = 500
-wait = 500
-
-[[action]]
-type = "BACKSPACE"
-number = 8
-wait = 500
-
-[[action]]
-type = "DATE"
+content = "${DATE}"
 wait = 500
 
 # delete the file name in content
@@ -382,18 +318,10 @@ wait = 2_000
 
 # modify the selected folder
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 820 
 y = 50 
-wait = 300
-
-[[action]]
-type = "BACKSPACE"
-number = 25 
-wait = 500
-
-[[action]]
-type = "INPUT"
+delnum = 25
 content = 'D:\工作\临时事务统计'
 
 # enter into the folder
@@ -454,34 +382,18 @@ wait = 2_000
 
 # change the date in title
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 470
 y = 210
-wait = 500
-
-[[action]]
-type = "BACKSPACE"
-number = 8
-wait = 500
-
-[[action]]
-type = "DATE"
+content = "${DATE}"
 wait = 500
 
 # change the date in content
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 655
 y = 455
-wait = 500
-
-[[action]]
-type = "BACKSPACE"
-number = 8
-wait = 500
-
-[[action]]
-type = "DATE"
+content = "${DATE}"
 wait = 500
 
 # wait before send
@@ -525,34 +437,18 @@ wait = 2_000
 
 # change the date in title
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 470
 y = 210
-wait = 500
-
-[[action]]
-type = "BACKSPACE"
-number = 8
-wait = 500
-
-[[action]]
-type = "DATE"
+content = "${DATE}"
 wait = 500
 
 # change the date in content
 [[action]]
-type = "MOVECLICK"
+type = "CHANGE"
 x = 655
 y = 420
-wait = 500
-
-[[action]]
-type = "BACKSPACE"
-number = 8
-wait = 500
-
-[[action]]
-type = "DATE"
+content = "${DATE}"
 wait = 500
 
 # wait before send

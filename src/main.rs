@@ -3,7 +3,7 @@ mod execute;
 mod utils;
 
 use clap::Parser;
-use config::config;
+use config::{config, write_sample_config};
 use execute::execute_action;
 use utils::detect_mouse_position;
 
@@ -23,6 +23,10 @@ struct Args {
     #[arg(short, long, action)]
     execute: bool,
 
+    /// generate the sample config toml file
+    #[arg(short, long, action)]
+    sample: bool,
+
     /// set initial x cursor
     #[arg(short, long, default_value_t = -1)]
     x: i32,
@@ -39,6 +43,11 @@ fn main() {
 
     if args.detect {
         detect_mouse_position(action_config.wait_before_detect_cursor);
+        return;
+    }
+
+    if args.sample {
+        write_sample_config();
         return;
     }
 

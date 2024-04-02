@@ -1,10 +1,10 @@
-use crate::config::Action;
-use crate::utils::sleep;
+use crate::utils::{detect_mouse_position, sleep};
+use crate::{config::Action, utils::continue_work_without_init_x_y};
 use chrono::{Datelike, Local};
 use enigo::*;
 use std::process;
 
-pub fn execute_action(actions: &[Action], init_x: i32, init_y: i32) {
+pub fn execute_action(actions: &[Action], mut init_x: i32, mut init_y: i32) {
     let mut enigo = Enigo::new();
     let mut origin_x = 0;
     let mut origin_y = 0;
@@ -22,8 +22,14 @@ pub fn execute_action(actions: &[Action], init_x: i32, init_y: i32) {
             }
             Action::MOVEINIT { wait } => {
                 if init_x < 0 || init_y < 0 {
-                    println!("Please specify the initial cursor -x -y in CLI parameters, actions not executed");
-                    process::exit(1);
+                    let continue_move = continue_work_without_init_x_y();
+                    if continue_move {
+                        let [x, y, ..] = detect_mouse_position(3_000, 1)[0];
+                        init_x = x;
+                        init_y = y;
+                    } else {
+                        process::exit(1);
+                    }
                 }
                 println!(
                     "move mouse cursor to initial position x:{} y:{}",

@@ -19,6 +19,10 @@ struct Args {
     #[arg(short, long, action)]
     detect: bool,
 
+    /// detect the current cursor position one time
+    #[arg(long, action)]
+    d1: bool,
+
     /// execute the actions in the config file
     #[arg(short, long, action)]
     execute: bool,
@@ -42,8 +46,13 @@ fn main() {
     // println!("{:#?}", action_config);
 
     if args.detect {
-        let pos_arr = detect_mouse_position(action_config.wait_before_detect_cursor);
+        let pos_arr = detect_mouse_position(action_config.wait_before_detect_cursor, 5);
         write_action_snippet(pos_arr);
+        return;
+    }
+
+    if args.d1 {
+        detect_mouse_position(action_config.wait_before_detect_cursor, 1);
         return;
     }
 

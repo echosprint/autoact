@@ -3,7 +3,7 @@ mod execute;
 mod utils;
 
 use clap::Parser;
-use config::{config, write_sample_config};
+use config::{config, write_action_snippet, write_sample_config};
 use execute::execute_action;
 use utils::detect_mouse_position;
 
@@ -42,7 +42,8 @@ fn main() {
     // println!("{:#?}", action_config);
 
     if args.detect {
-        detect_mouse_position(action_config.wait_before_detect_cursor);
+        let pos_arr = detect_mouse_position(action_config.wait_before_detect_cursor);
+        write_action_snippet(pos_arr);
         return;
     }
 

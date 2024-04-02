@@ -149,6 +149,20 @@ pub fn write_sample_config() {
     file.write_all(TOML_SAMPLE.as_bytes()).unwrap();
 }
 
+pub fn write_action_snippet(pos_arr: Vec<[i32; 4]>) {
+    let exe_path: PathBuf = env::current_exe().unwrap();
+    let exe_dir = exe_path.parent().unwrap();
+    let mut file = fs::File::create(exe_dir.join("action_snippet.toml")).unwrap();
+    let formatted_strings: Vec<String> = pos_arr.iter().enumerate()
+        .map(|(idx, array)| format!("# position {}\n[[action]]\ntype = \"MOVECLICK\"\nx = {}\ny = {}\n\n[[action]]\ntype = \"MOVECLICK\"\nx = {}\ny = {}\nrelative = true\n",
+         idx+1, array[0], array[1], array[2], array[3]))
+        .collect();
+
+    // Concatenating all formatted strings with "\n" as a separator
+    let result = formatted_strings.join("\n");
+    file.write_all(result.as_bytes()).unwrap();
+}
+
 const TOML_SAMPLE: &str = r###"
 execute_action = true # optional, default true
 wait_before_detect_cursor = 4_000 # optional, ms
